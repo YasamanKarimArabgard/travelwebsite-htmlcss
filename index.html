@@ -5,15 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/df75c3797d.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/df75c3797d.js" crossorigin="anonymous"></script>
     <title>index</title>
 </head>
 
 <body>
     <header>
-        <div class="navbar">
+        <nav>
+            <i class="fa fa-bars fa-2x" id="nav-icon" aria-hidden="true"></i>
             <div class="nav_menu">
                 <p>SP.travel</p>
                 <ul>
@@ -32,12 +33,30 @@
                 </ul>
             </div>
             <div class="nav_searchbox">
+                <i class="fa fa-search" aria-hidden="true"></i>
                 <input type="searchbox" placeholder="search places">
                 <button>join</button>
             </div>
-        </div>
+        </nav>
     </header>
     <main>
+        <div class="loaction_hotel-mobile">
+            <div class="filter">
+                <div class="filter_place">
+                    <p>Rio de janeiro</p>
+                </div>
+                <div class="filter_date">
+                    <i class="fa fa-calculator" aria-hidden="true"></i>
+                    <p>Date</p>
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </div>
+                <div class="filter_room">
+                    <i class="fa fa-bed" aria-hidden="true"></i>
+                    <p>Room</p>
+                </div>
+            </div>
+            <button id="loaction_hotel-button">Find</button>
+        </div>
         <section>
             <div class="banner">
                 <div class="banner_text">
@@ -69,7 +88,23 @@
                     </ul>
                 </aside>
                 <div class="location">
-                    <div class="loaction_hotel"></div>
+                    <div class="loaction_hotel">
+                        <div class="filter">
+                            <div class="filter_place">
+                                <p>Rio de janeiro</p>
+                            </div>
+                            <div class="filter_date">
+                                <i class="fa fa-calculator" aria-hidden="true"></i>
+                                <p>Date</p>
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </div>
+                            <div class="filter_room">
+                                <i class="fa fa-bed" aria-hidden="true"></i>
+                                <p>Room</p>
+                            </div>
+                        </div>
+                        <button id="loaction_hotel-button">Find</button>
+                    </div>
                     <div class="location_place">
                         <div class="location_place_part1">
                             <img src="images/rio.jpg" alt="rio" height="180px" width="270px">
@@ -107,8 +142,10 @@
                 </div>
             </article>
         </section>
-        <footer></footer>
     </main>
+    <footer>
+        <p>created by Jasmine Arabgard since 2021</p>
+    </footer>
 </body>
 
 </html>
